@@ -27,4 +27,7 @@ fn main() {
         "November",
         "December",
     ];
+    for month in months.iter() {
+        println!("The month is: {}", month)
+    }
 }
