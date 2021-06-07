@@ -1,42 +1,39 @@
 fn main() {
-    // let x = 5;
-    // let y = &x;
+    let s = String::from("hello");
 
-    // let s = "hello";
-    // let s2 = String::from("hello");
+    takes_ownership(s);
+    // println!("{}", s); // no longer valid. will cause an error
 
-    // println!("x is {}", x);
-    // println!("y is {}", y);
-
-    let s = String::from("Hello");
-    some_function2(s);
-    // S borrowed because some_function2 takes the ownership
-    // println!("{}", s); // Error
-
-    let s2 = String::from("Hello");
-    // some_function3 will take the ownership but return the ownership back
-    // because it returns the string back
-    let s3 = some_function3(s2);
-
-    println!("{}", s3);
-
-    // Copy trait
-    // This will not take the ownership because the data type is i32
-    // i32 is stored in stack, and not heap
     let x = 5;
-    some_function(x);
 
-    println!("x = {}", x);
+    makes_copy(x);
+    println!("x = {}", x); // valid here
+
+    let s1 = gives_ownership();
+    let s2 = String::from("hello");
+    // s2 is moved into
+    // takes_and_gives_back, which also
+    // moves its return value into s3
+    let s3 = takes_and_gives_back(s2);
+
+    println!("s1 = {}", s1);
+    // println!("{}", s2); // error
+    println!("s2 = {}", s3);
 }
 
-fn some_function(num: i32) -> i32 {
-    num
+fn takes_ownership(some_string: String) {
+    println!("some_string = {}", some_string);
 }
 
-fn some_function2(str: String) {
-    println!("{}", str);
+fn makes_copy(some_integer: i32) {
+    println!("some_integer = {}", some_integer);
 }
 
-fn some_function3(str: String) -> String {
-    str
+fn gives_ownership() -> String {
+    let some_string = String::from("hello");
+    some_string
+}
+
+fn takes_and_gives_back(a_string: String) -> String {
+    a_string
 }
