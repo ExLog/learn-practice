@@ -1,5 +1,5 @@
 [package]
-name = "fibonacci"
+name = "chapter_1_hello_cargo"
 version = "0.1.0"
 authors = ["Muhammad Dony Mulya <55097092+ExLog@users.noreply.github.com>"]
 edition = "2018"

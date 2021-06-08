@@ -1,5 +1,5 @@
 [package]
-name = "return_tuple"
+name = "chapter_5_struct"
 version = "0.1.0"
 authors = ["Muhammad Dony Mulya <55097092+ExLog@users.noreply.github.com>"]
 edition = "2018"
