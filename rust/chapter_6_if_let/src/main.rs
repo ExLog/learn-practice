@@ -1,13 +1,15 @@
 fn main() {
-    let some_u8_value = Some(0u8);
+    let some_u8_value: Option<u8> = Some(0);
 
-    match some_u8_value {
-        Some(3) => println!("three"),
-        _ => (),
-    }
+    // match some_u8_value {
+    //     Some(3) => println!("three"),
+    //     _ => println!("not three"),
+    // };
 
-    // Instead, use if let
+    // Equivelant of code above
     if let Some(3) = some_u8_value {
         println!("three");
-    }
+    } else {
+        println!("not three")
+    };
 }
