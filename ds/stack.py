@@ -1,9 +1,10 @@
 from typing import Optional, TypeVar
 
-T = TypeVar('T')
+T = TypeVar("T")
+
 
 class DataNode:
-    data = T 
+    data = T
     next = None
 
     def __init__(self, data, next):
@@ -15,7 +16,6 @@ class Queue:
     _size: int = 0
     head: Optional[DataNode] = None
     tail: Optional[DataNode] = None
-
 
     def __init__(self):
         self.head = self.tail = None
@@ -29,7 +29,7 @@ class Queue:
 
         # jika head masih kosong
         # kondisi belum pernah di push
-        if self.head == None:
+        if self.head is None:
             # inisialisasi head dan tail ke node yang dibuat
             # dua-duanya mengarah ke next yaitu None
             self.head = self.tail = node
@@ -39,8 +39,8 @@ class Queue:
             assert self.tail is not None
 
             # tail.next akan mengarah ke node baru
-            # yang dimana node 
-            # { 
+            # yang dimana node
+            # {
             #    data: data,
             #    next: None
             # }
@@ -67,7 +67,3 @@ if __name__ == "__main__":
     linked.push("miko")
     # head aqua DataNode("peko", DataNode("miko", None))
     # tail miko None
-
-
-
-
