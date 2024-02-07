@@ -4,24 +4,26 @@ from typing import List
 
 
 def bubble_sort(nums: List[int]):
-    itt = 0
-
     for _ in range(0, len(nums)):
-        # 4 iterations
-        itt += 1
         for j in range(0, len(nums) - 1):
-            # 4 iterations
             if nums[j] > nums[j + 1]:
                 nums[j], nums[j + 1] = nums[j + 1], nums[j]
 
-    # 4 * 4 = 16 iterations
-    # print(itt)
+    return nums
+
+
+def bubble_sort_2(nums: List[int]):
+    for i in range(0, len(nums)):
+        for j in range(0, len(nums) - i - 1):
+            if nums[j] > nums[j + 1]:
+                nums[j], nums[j + 1] = nums[j + 1], nums[j]
+
     return nums
 
 
 if __name__ == "__main__":
-    nums = [5, 7, 3, 1]
+    nums = [9, 1, 8, 2, 7, 3, 6, 4, 5]
 
-    result = bubble_sort(nums)
+    result = bubble_sort_2(nums)
 
     print(result)
