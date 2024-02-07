@@ -44,7 +44,6 @@ nav {
 
 body {
     height: 100vh;
-    display: flex;
     background: var(--background);
     color: var(--text);
     font-family:
@@ -88,9 +87,7 @@ aside.sidebar {
 }
 
 main {
-    width: 100%;
     display: flex;
-    flex-direction: column;
 }
 
 nav {
@@ -115,6 +112,9 @@ footer {
 }
 
 article {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 80%;
     background: var(--background-2);
     margin: 12px;
     padding: 20px;
@@ -123,6 +123,7 @@ article {
 
 .article-content {
     display: flex;
+    align-items: center;
     margin-top: 10px;
     gap: 20px;
 }
