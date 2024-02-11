@@ -689,3 +689,5 @@ FodyWeavers.xsd
 *.exe
 
 *.out
+
+.vite
