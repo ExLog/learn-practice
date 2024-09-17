@@ -1,70 +1,301 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Submission Belajar Dasar Pemrograman Web</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Submission Dicoding: Belajar Dasar Pemrograman Web</title>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
     <header>
-      <nav>
-        <div class="links">
-          <a class="link active" href="index.html">Home</a>
-          <a class="link" href="#">About</a>
-        </div>
-        <div class="right-side">
-          <input id="search-bar" type="text" placeholder="Search..." />
-        </div>
-      </nav>
+        <nav>
+            <a class="nav__item active" href="#">home</a>
+            <a class="nav__Item" href="#">about</a>
+        </nav>
     </header>
 
     <main>
-      <aside class="sidebar">
-        <h1 class="sidebar-title">Boards</h1>
-        <a href="#" class="sidebar-item active">/p/ Programming</a>
-        <a href="#" class="sidebar-item">/g/ Technology</a>
-        <a href="#" class="sidebar-item">/a/ Anime & Manga</a>
-        <a href="#" class="sidebar-item">/vt/ Virtual Youtubers</a>
-        <a href="#" class="sidebar-item">/v/ Video Games</a>
-        <a href="#" class="sidebar-item">/fa/ Fashion</a>
-      </aside>
+        <aside class="sidebar">
+            <section class="sidebar__header">
+                <img class="avatar" src="https://avatars.githubusercontent.com/u/55097092?v=4" alt="">
+            </section>
 
-      <article>
-        <h2 class="article-title">
-          What is the best code editor and why is it Vim?
-        </h2>
-        <div class="article-content">
-          <aside>
-            <img
-              class="article-img"
-              src="https://image.artistshot.com/d.1314822745.13026390.s3.1-1e1e1e-bm9uZQ-800x800.jpg"
-              alt="What is the best code editor and why is it Vim? Image"
-            />
-          </aside>
-          <div>
-            <p class="article-text">
-              Lorem ipsum dolor sit amet, officia excepteur ex fugiat
-              reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit
-              ex esse exercitation amet. Nisi anim cupidatat excepteur officia.
-              Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet
-              voluptate voluptate dolor minim nulla est proident. Nostrud
-              officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex
-              occaecat reprehenderit commodo officia dolor Lorem duis laboris
-              cupidatat officia voluptate. Culpa proident adipisicing id nulla
-              nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua
-              reprehenderit commodo ex non excepteur duis sunt velit enim.
-              Voluptate laboris sint cupidatat ullamco ut ea consectetur et est
-              culpa et culpa duis.
+            <section class="sidebar__content">
+                <a class="sidebar__link" href="mailto:veirt@duck.com">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M22 4H2v16h20zM4 18V6h16v12zM8 8H6v2h2v2h2v2h4v-2h2v-2h2V8h-2v2h-2v2h-4v-2H8z" />
+                    </svg>
+                    e-mail: veirt@duck.com
+                </a>
+
+                <a class="sidebar__link" href="https://veirt.is-a.dev/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M5 3H3v18h18V3zm14 2v14H5V5zm-2 2H7v2h10zM7 11h10v2H7zm7 4H7v2h7z" />
+                    </svg>
+                    blog
+                </a>
+
+                <a class="sidebar__link" href="https://github.com/Veirt">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M5 2h4v2H7v2H5zm0 10H3V6h2zm2 2H5v-2h2zm2 2v-2H7v2H3v-2H1v2h2v2h4v4h2v-4h2v-2zm0 0v2H7v-2zm6-12v2H9V4zm4 2h-2V4h-2V2h4zm0 6V6h2v6zm-2 2v-2h2v2zm-2 2v-2h2v2zm0 2h-2v-2h2zm0 0h2v4h-2z" />
+                    </svg>
+                    github
+                </a>
+
+
+
+            </section>
+
+        </aside>
+
+        <section id="content">
+            <p class="intro">
+                hey, i'm veirt.
             </p>
-            <button class="btn" style="margin-top: 12px">
-              Continue reading...
-            </button>
-          </div>
-        </div>
-      </article>
+
+            <h1 class="section__title">latest articles</h1>
+            <section id="article__list">
+                <article>
+                    <div class="article__header">
+                        <a href="#" class="article__title">my home server</a>
+                        <div class="article__date">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M15 2h2v2h4v18H3V4h4V2h2v2h6zM5 8h14V6H5zm0 2v10h14V10z" />
+                            </svg>
+                            10 september
+                        </div>
+                    </div>
+
+                    <div class="article__desc">
+                        check out my home server setup.
+                    </div>
+                </article>
+
+                <article>
+                    <div class="article__header">
+                        <a href="#" class="article__title">learing svelte</a>
+                        <div class="article__date">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M15 2h2v2h4v18H3V4h4V2h2v2h6zM5 8h14V6H5zm0 2v10h14V10z" />
+                            </svg>
+                            9 september
+                        </div>
+                    </div>
+
+                    <div class="article__desc">
+                        this is my experience with svelte.
+                    </div>
+                </article>
+
+                <article>
+                    <div class="article__header">
+                        <a href="#" class="article__title">switching to nixos</a>
+                        <div class="article__date">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M15 2h2v2h4v18H3V4h4V2h2v2h6zM5 8h14V6H5zm0 2v10h14V10z" />
+                            </svg>
+                            8 september
+                        </div>
+                    </div>
+
+                    <div class="article__desc">
+                        i use nixos btw
+                    </div>
+                </article>
+
+                <article>
+                    <div class="article__header">
+                        <a href="#" class="article__title">typing</a>
+                        <div class="article__date">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M15 2h2v2h4v18H3V4h4V2h2v2h6zM5 8h14V6H5zm0 2v10h14V10z" />
+                            </svg>
+                            7 september
+                        </div>
+                    </div>
+                    <div class="article__desc">
+                        practicing typing for 2 years now.
+                    </div>
+                </article>
+
+                <article>
+                    <div class="article__header">
+                        <a href="#" class="article__title">why go is better</a>
+                        <div class="article__date">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M15 2h2v2h4v18H3V4h4V2h2v2h6zM5 8h14V6H5zm0 2v10h14V10z" />
+                            </svg>
+                            6 september
+                        </div>
+                    </div>
+                    <div class="article__desc">
+                        jadi gini mas
+                    </div>
+                </article>
+
+            </section>
+
+            <h1 class="section__title">tech that i use</h1>
+            <section id="tech__list">
+
+                <div class="tech__item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+                        <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="#8aadf4"
+                                d="M8.5 5.5h-3m6 0V3c0-.8-.7-1.5-1.5-1.5H7c-.8 0-1.5.7-1.5 1.5v2.5H3c-.8 0-1.5.7-1.5 1.5v2c0 .8.7 1.5 1.48 1.5" />
+                            <path stroke="#eed49f"
+                                d="M10.5 10.5h-3m-3 0V13c0 .8.7 1.5 1.5 1.5h3c.8 0 1.5-.7 1.5-1.5v-2.5H13c.8 0 1.5-.7 1.5-1.5V7c0-.8-.7-1.5-1.48-1.5H11.5c0 1.5 0 2-1 2h-2" />
+                            <path stroke="#8aadf4" d="M2.98 10.5H4.5c0-1.5 0-2 1-2h2m0-5" />
+                        </g>
+                    </svg>
+                    python
+                </div>
+
+                <div class="tech__item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+                        <g fill="none" stroke="#eed49f" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M4.5 11a1.5 1.5 0 0 0 3 0V7.5m5 1.25c0-.69-.537-1.25-1.2-1.25h-.6c-.663 0-1.2.56-1.2 1.25S10.037 10 10.7 10h.6c.663 0 1.2.56 1.2 1.25s-.537 1.25-1.2 1.25h-.6c-.663 0-1.2-.56-1.2-1.25" />
+                            <path
+                                d="M4 1.5h8c1.385 0 2.5 1.115 2.5 2.5v8c0 1.385-1.115 2.5-2.5 2.5H4A2.495 2.495 0 0 1 1.5 12V4c0-1.385 1.115-2.5 2.5-2.5" />
+                        </g>
+                    </svg>
+                    javascript
+                </div>
+
+                <div class="tech__item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+                        <g fill="none" stroke="#8aadf4" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M4 1.5h8A2.5 2.5 0 0 1 14.5 4v8a2.5 2.5 0 0 1-2.5 2.5H4A2.5 2.5 0 0 1 1.5 12V4A2.5 2.5 0 0 1 4 1.5" />
+                            <path
+                                d="M12.5 8.75c0-.69-.54-1.25-1.2-1.25h-.6c-.66 0-1.2.56-1.2 1.25S10.04 10 10.7 10h.6c.66 0 1.2.56 1.2 1.25s-.54 1.25-1.2 1.25h-.6c-.66 0-1.2-.56-1.2-1.25m-3-3.75v5M5 7.5h3" />
+                        </g>
+                    </svg>
+                    typescript
+                </div>
+
+                <div class="tech__item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+                        <path fill="none" stroke="#7dc4e4" stroke-linecap="round" stroke-linejoin="round"
+                            d="m15.48 8.06l-4.85.48m4.85-.48a4.98 4.98 0 0 1-4.54 5.42a5 5 0 1 1 2.95-8.66l-1.7 1.84a2.5 2.5 0 0 0-4.18 2.06c.05.57.3 1.1.69 1.51c.25.27 1 .83 1.78.82c.8-.02 1.58-.25 2.07-.81c0 0 .8-.96.68-1.88M2.5 8.5l-2 .01m1.5 2h1.5m-2-3.99l2-.02" />
+                    </svg>
+                    golang
+                </div>
+
+                <div class="tech__item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+                        <g fill="none" stroke="#f5a97f" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M15.5 9.5Q8 13.505.5 9.5l1-1l-1-2l2-.5V4.5h2l.5-2l1.5 1l1.5-2l1.5 2l1.5-1l.5 2h2V6l2 .5l-1 2z" />
+                            <path
+                                d="M6.5 7.5a1 1 0 0 1-1 1a1 1 0 0 1-1-1a1 1 0 0 1 1-1a1 1 0 0 1 1 1m5 0a1 1 0 0 1-1 1a1 1 0 0 1-1-1a1 1 0 0 1 1-1a1 1 0 0 1 1 1M4 11.02c-.67.37-1.5.98-1.5 2.23s1.22 1.22 2 1.25v-2M12 11c.67.37 1.5 1 1.5 2.25s-1.22 1.22-2 1.25v-2" />
+                        </g>
+                    </svg>
+                    rust
+                </div>
+
+                <div class="tech__item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+                        <g fill="none" stroke="#f5a97f" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M12.86 6.72s1.39-1.98.08-3.87C11.286.763 9.44 1.6 9.44 1.6S6.15 3.35 4.33 4.59c-1.4 1-2.24 2.26-1.03 4.37c1.22 2.1 4.58 1.21 4.58 1.21" />
+                            <path
+                                d="M3.14 9.28s-1.39 1.98-.08 3.87c1.31 1.9 3.5 1.24 3.5 1.24s3.29-1.74 5.11-2.98c1.4-1 2.24-2.26 1.03-4.37c-1.22-2.1-4.58-1.21-4.58-1.21M6.3 6.96l4.14-2.56m-4.92 7.25L9.66 9.1" />
+                        </g>
+                    </svg>
+                    svelte
+                </div>
+
+
+
+                <div class="tech__item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+                        <path fill="none" stroke="#8aadf4" stroke-linecap="round" stroke-linejoin="round"
+                            d="M.5 8.5H11l.75-.5a5.35 5.35 0 0 1 0-3.5c1 .6 1 1.88 1.74 2c.77-.09 1.23.01 2 .52c0 0-.97 1.77-2.5 1.98c-1.93 3.65-4.5 5.5-6.98 5.5C0 14.5.5 8.5.5 8.5m1 0v-2m0 0h8m-6 2v-4m0 0h4m-2-2h2m-2 6v-6m2 6v-6m2 6v-2" />
+                    </svg>
+                    docker
+                </div>
+
+                <div class="tech__item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+                        <g fill="none" stroke="#91d7e3" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M8 10.8c4.14 0 7.5-1.25 7.5-2.8S12.14 5.2 8 5.2S.5 6.45.5 8s3.36 2.8 7.5 2.8" />
+                            <path
+                                d="M5.52 9.4c2.07 3.5 4.86 5.72 6.23 4.95c1.37-.78.8-4.24-1.27-7.75C8.41 3.1 5.62.88 4.25 1.65c-1.37.78-.8 4.24 1.27 7.75" />
+                            <path
+                                d="M5.52 6.6c-2.07 3.5-2.64 6.97-1.27 7.75c1.37.77 4.16-1.45 6.23-4.95s2.64-6.97 1.27-7.75C10.38.88 7.59 3.1 5.52 6.6" />
+                            <path d="M8.5 8a.5.5 0 0 1-.5.5a.5.5 0 0 1-.5-.5a.5.5 0 0 1 .5-.5a.5.5 0 0 1 .5.5" />
+                        </g>
+                    </svg>
+                    react
+                </div>
+
+                <div class="tech__item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...$$props}>
+                        <g fill="none" stroke="#cad3f5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12.33 12.85a6.5 6.5 0 1 1 1.55-2.08" />
+                            <path d="M12.33 12.85L5.5 4.5v7m5-7v3" />
+                        </g>
+                    </svg>
+                    next.js
+                </div>
+
+                <div class="tech__item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+                        <path fill="none" stroke="#a6da95" stroke-linecap="round" stroke-linejoin="round"
+                            d="M1.5 2.5h4m-3 0v11h3l8-11H11l-6.5 9v-9m10 0H9" />
+                    </svg>
+                    vim
+                </div>
+
+                <div class="tech__item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...$$props}>
+                        <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="#cad3f5"
+                                d="M8.5 10.5a1 1 0 0 1-1 1a1 1 0 0 1-1-1a1 1 0 0 1 1-1a1 1 0 0 1 1 1m0-6a1 1 0 0 1-1 1a1 1 0 0 1-1-1a1 1 0 0 1 1-1a1 1 0 0 1 1 1m3 3a1 1 0 0 1-1 1a1 1 0 0 1-1-1a1 1 0 0 1 1-1a1 1 0 0 1 1 1m-4-2v4m-1-6l-1-1m4 4l-1-1" />
+                            <path stroke="#f5a97f"
+                                d="m9.06 1.06l5.88 5.88a1.5 1.5 0 0 1 0 2.12l-5.88 5.88a1.5 1.5 0 0 1-2.12 0L1.06 9.06a1.5 1.5 0 0 1 0-2.12l5.88-5.88a1.5 1.5 0 0 1 2.12 0" />
+                        </g>
+                    </svg>
+                    git
+                </div>
+
+                <div class="tech__item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...$$props}>
+                        <path fill="none" stroke="#7dc4e4" stroke-linecap="round" stroke-linejoin="round"
+                            d="M8 2.5q-3 0-3.75 3.33C5 4.73 5.88 4.31 6.87 4.58c.58.16.98.62 1.43 1.13c.74.83 1.6 1.79 3.45 1.79q3 0 3.75-3.33c-.75 1.1-1.63 1.52-2.63 1.25c-.57-.16-.97-.62-1.42-1.13C10.7 3.46 9.85 2.5 8 2.5m-3.75 6q-3 0-3.75 3.33c.75-1.1 1.63-1.52 2.63-1.25c.57.16.97.62 1.42 1.13c.74.83 1.6 1.79 3.45 1.79q3 0 3.75-3.33c-.75 1.1-1.63 1.52-2.62 1.25c-.58-.16-.98-.62-1.43-1.13c-.74-.83-1.6-1.79-3.45-1.79" />
+                    </svg>
+                    tailwindcss
+                </div>
+
+
+            </section>
+
+
+        </section>
+
     </main>
 
-    <footer>made with love by veirt</footer>
-  </body>
+    <footer>
+        <span>
+            made with
+        </span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+            <path fill="currentColor"
+                d="M9 2H5v2H3v2H1v6h2v2h2v2h2v2h2v2h2v2h2v-2h2v-2h2v-2h2v-2h2v-2h2V6h-2V4h-2V2h-4v2h-2v2h-2V4H9zm0 2v2h2v2h2V6h2V4h4v2h2v6h-2v2h-2v2h-2v2h-2v2h-2v-2H9v-2H7v-2H5v-2H3V6h2V4z" />
+        </svg>
+        <span>
+            by veirt
+        </span>
+    </footer>
+</body>
+
 </html>
